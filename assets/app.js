@@ -20,20 +20,24 @@ $("#country").change(function () {
 
 })
 
-var queryURL = "api.openweathermap.org/data/2.5/weather?q=" + city + "," + country + "&units=imperial&appid=" + APIKey;
 
+$("#search-weather").click(function(){
 
-$.ajax({
-  url: "https://cors-anywhere.herokuapp.com/" + queryURL,
-  method: "GET"
-}).then(function (response) {
-  var temp = Math.floor(response.main.temp);
-  var weather = response.weather[0].main;
+  var queryURL = "api.openweathermap.org/data/2.5/weather?q=" + city + "," + country + "&units=imperial&appid=" + APIKey;
 
-  $(".weather").append(weather);
-
+  $.ajax({
+    url: "https://cors-anywhere.herokuapp.com/" + queryURL,
+    method: "GET"
+  }).then(function (response) {
+    var temp = Math.floor(response.main.temp);
+    var weather = response.weather[0].main;
+  
+    $(".weather").append(weather);
+  })
 
 })
+
+
 
 // $.getJSON(
 //   "api.openweathermap.org/data/2.5/weather?q="+ city +","+ country + "&units=imperial&appid=" + APIKey,
