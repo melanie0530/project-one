@@ -1,18 +1,18 @@
 
 <!doctype html>
 <html lang="en">
+​
 
 <head>
-
+    ​
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    ​
     <title>Hello world Travel Site</title>
     <style>
         .row {
@@ -21,9 +21,10 @@
     </style>
 
 </head>
+​
 
 <body>
-
+    ​
     <!-- Banner -->
     <div class="container">
         <div class="jumbotron" style="background-color: black">
@@ -32,73 +33,54 @@
             </h1>
         </div>
     </div>
-
+    ​
     <!-- Get flight information -->
     <div class="container">
         <div class="panel panel-default">
             <div class="panel-heading" style="background-color: black">
                 <p style="color: white">Currency change</p>
             </div>
-
+            ​
             <div class="row">
-
+                ​
                 <div class='col-sm-4'>
                     <label for="inputSearch">From:</label>
-
+                    ​
                     <div class="dropdown">
                         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <a class="dropdown-item" href="#">USD</a>
                         </button>
-                        <!-- <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">AUD</a>
-                            <a class="dropdown-item" href="#">CAD</a>
-                            <a class="dropdown-item" href="#">MXN</a>
-                            <a class="dropdown-item" href="#">PLN</a>
-                        </div> -->
                     </div>
                 </div>
-
+                ​
                 <div class='col-sm-4'>
-                    <label for="inputSearch" >Value:</label>
+                    <label for="inputSearch">Value:</label>
                     <input type="number" class="form-control" id="initial-dollar">
                 </div>
-
-
-
+                ​
             </div>
-
+            ​
             <div class="row">
-
+                ​
                 <div class='col-sm-4'>
                     <label for="inputSearch">To:</label>
+                    ​
                     <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" id="exchange-button" style = "background: grey"
-                                aria-haspopup="true" aria-expanded="false">
-                            </button>
-                            <!-- <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"> -->
-                                    <select id="convert">
-                                            <option value="USD">USD</option>
-                                            <option value="AUD">AUD</option>
-                                            <option value="CAD">CAD</option>
-                                            <option value="MXN">MXN</option>
-                                            <option value="PLN">PLN</option>
-                                          </select>
-                                <!-- <a class="dropdown-item" >AUD</a>
-                                <a class="dropdown-item" href="#">CAD</a>
-                                <a class="dropdown-item" href="#">MXN</a>
-                                <a class="dropdown-item" href="#">PLN</a> -->
-                            <!-- </div> -->
-                        </div>
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="dropdown-item" href="#">USD</a>
+                        </button>
+                    </div>
                 </div>
-
+                ​
                 <div class='col-sm-4'>
                     <label for="inputSearch">Value:</label>
                     <input type="number" class="form-control" id="exchange-rate">
                 </div>
-
-
-
+                ​
+                ​
+                ​
                 <!-- Search Buttons -->
                 <div class="row">
                     <button type="button" class="btn btn-secondary" style="background-color: #95a5a6"> Search
@@ -110,7 +92,7 @@
                 </div>
             </div>
         </div>
-
+        ​
         <!-- More Information -->
         <div class="container">
             <div class="panel panel-default">
@@ -118,25 +100,62 @@
                     <p style="color: white">More Information</p>
                 </div>
                 <div class="row">
-                </div>
-            </div>
-            <!-- 
-                <script type="text/javascript">
-                    $(function () {
-                        $('#datetimepicker1').datetimepicker();
-                    });
-                </script> -->
+                    ​
+                    <div class='col-sm-4'>
+                        <label for="inputSearch">Country</label>
+                        <div>
+                            <select id="country">
+                                <option value="US">US</option>
+                                <option value="Australia">Australia</option>
+                                <option value="Europe">Europe</option>
+                                <option value="UK">UK</option>
 
-            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-                integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-                crossorigin="anonymous"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-                integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-                crossorigin="anonymous"></script>
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-                integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-                crossorigin="anonymous"></script>
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class='col-sm-4'>
+                        <label for="inputSearch">City</label>
+                        <div>
+                            <select id="city">
+                                <option value="Chicago">Chicago</option>
+                                <option value="Sydney">Sydney</option>
+                                <option value="London">London</option>
+                            </select>
+
+                            <button type="button" class="btn btn-secondary" style="background-color: #95a5a6" id="search-weather"> Search
+                                </button>
+
+                        </div>
+                        <div class='col-sm-4'>
+                            <div class="weather-container">
+                                <p class="weather"></p>
+
+                            </div>
+                        </div>
+                        ​
+                    </div>
+                    ​
+                    ​
+                    ​
+                    ​
+                </div>
+                ​
+                <script src="https://code.jquery.com/jquery-3.4.1.js"
+                    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+                ​
+                ​
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+                    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+                    crossorigin="anonymous"></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+                    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+                    crossorigin="anonymous"></script>
+                ​
+                <script src="assets/app.js"></script>
 </body>
+​
 
 </html>
