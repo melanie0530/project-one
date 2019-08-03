@@ -14,7 +14,6 @@ var countries = {
 }
 
 
-
 var APIKey = "23f9dd0852e73adbaaf2bb82a2749d8d";
 
 $("#city").change(function () {
@@ -152,3 +151,7 @@ $("#exchange-button").on("click", function () {
     //     console.log("Humidity: " + response.main.humidity);
     //     console.log("Temperature (F): " + response.main.temp);
     //   });
+
+
+    
+    

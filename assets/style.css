@@ -1,4 +1,90 @@
-body{
+body {
     font-size: 20px;
+    overflow-x: hidden;
+    /* For Opera */
+    -webkit-box-shadow: inset #010e11 0 0 0 5px, inset #0c363f 0 0 0 1px, inset #146577 0 0 0 10px, inset #2898b1 0 0 0 11px, inset #2aa7c4 0 0 0 16px, inset #88e2f7 0 0 0 17px, inset #c5f4ff 0 0 0 22px, inset #bfecf7 0 0 0 23px;
+    -moz-box-shadow: inset #010e11 0 0 0 5px, inset #0c363f 0 0 0 1px, inset #146577 0 0 0 10px, inset #2898b1 0 0 0 11px, inset #2aa7c4 0 0 0 16px, inset #88e2f7 0 0 0 17px, inset #c5f4ff 0 0 0 22px, inset #bfecf7 0 0 0 23px;
+    box-shadow: inset #010e11 0 0 0 5px, inset #0c363f 0 0 0 1px, inset #146577 0 0 0 10px, inset #2898b1 0 0 0 11px, inset #2aa7c4 0 0 0 16px, inset #88e2f7 0 0 0 17px, inset #c5f4ff 0 0 0 22px, inset #bfecf7 0 0 0 23px;
+    background: linear-gradient(270deg, #eaf2f0, #11e3af, #11e3d8, #5c6de3, #262b4f);
+    background-size: 1000% 100%;
+    -webkit-animation: AnimationName 10s ease infinite;
+    -moz-animation: AnimationName 10s ease infinite;
+    -o-animation: AnimationName 10s ease infinite;
+    animation: AnimationName 10s ease infinite;
+}
+
+.rotate {
+    position: center;
+    animation: rotation 8s infinite linear;
+  }
+
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+@-webkit-keyframes AnimationName {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-moz-keyframes AnimationName {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes AnimationName {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-o-keyframes AnimationName {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+
     
+}
+
+
+
+.country-city {
+    float: left;
+    margin: 15px;
+}
+
+.weather-temp {
+    float: right;
+    margin: 25px;
 }

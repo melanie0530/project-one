@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    ​
     <link rel="stylesheet" href="assets/style.css">
     <title>Hello world Travel Site</title>
     <style>
@@ -28,13 +27,14 @@
     <!-- Banner -->
     <div class="container">
         <div class="jumbotron" style="background-color: black">
+                <img src="assets/globe-icon.png" class="rotate" width="50%" height="50%" />
             <h1 class="text-center" style="color: white">
                 <i>Hello World</i>
             </h1>
         </div>
     </div>
     ​
-    <!-- Get flight information -->
+    <!-- Exchange Rate -->
     <div class="container">
         <div class="panel panel-default">
             <div class="panel-heading" style="background-color: black">
@@ -94,69 +94,72 @@
     </div>
     ​
 
-    <!-- More Information -->
-    <div class="container">
-        <div class="panel panel-default">
+    <!-- Weather -->
+    <div class="container" >
+        <div class="panel panel-default" >
             <div class="panel-heading" style="background-color: black">
-                <p style="color: white">More Information</p>
+                <p style="color: white">Weather</p>
             </div>
-            <div class="row">
-                ​
-                <div class='col-sm-4'>
-                    <label for="inputSearch">Country</label>
-                    <div>
-                        <select id="country">
-                            <option value="US">US</option>
-                            <option value="Australia">Australia</option>
-                            <option value="France">France</option>
-                            <option value="UK">UK</option>
 
-                        </select>
+            <div class="country-city">
+                <div class="row">
+                    <div class='col-sm-4'>
+                        <label for="inputSearch">Country</label>
+                        <div>
+                            <select id="country">
+                                <option value="US">US</option>
+                                <option value="Australia">Australia</option>
+                                <option value="France">France</option>
+                                <option value="UK">UK</option>
+
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class='col-sm-4'>
+                        <label for="inputSearch">City</label>
+                        <div>
+                            <select id="city">
+                                <option>Chicago</option>
+                            </select>
+
+                            <button type="button" class="btn btn-secondary" style="background-color: #95a5a6"
+                                id="search-weather"> Search
+                            </button>
+
+                        </div>
+
                     </div>
                 </div>
             </div>
 
-            <div class="row">
-                <div class='col-sm-4'>
-                    <label for="inputSearch">City</label>
-                    <div>
-                        <select id="city">
-                            <option>Chicago</option>
-                        </select>
+            <div class="weather-temp">
+                <div class="row" id="weather">
+                    <div class='col-sm-4'>
+                        <div class="weather-container">
+                            <h2>Weather: </h2>
 
-                        <button type="button" class="btn btn-secondary" style="background-color: #95a5a6"
-                            id="search-weather"> Search
-                        </button>
+                            <p class="weather"></p>
 
-                    </div>
+                            <h2>Current Tempterature:</h2>
 
+                            <p class="temp"></p>
+
+                            <h2>Current Tempterature:</h2>
+
+                            <p class="minTemp"></p>
+
+                            <h2>Current Tempterature:</h2>
+
+                            <p class="maxTemp"></p>
+                        </div>
+                    </div>                 ​
                 </div>
             </div>
-
-
-            <div class="row" id="weather">
-                <div class='col-sm-4'>
-                    <div class="weather-container">
-                        <h2>Weather : </h2>
-
-                        <p class="weather"></p>
-
-                        <h2>Current Tempterature:</h2>
-
-                        <p class="temp"></p>
-
-                        <h2>Current Tempterature:</h2>
-
-                        <p class="minTemp"></p>
-
-                        <h2>Current Tempterature:</h2>
-
-                        <p class="maxTemp"></p>
-                    </div>
-                </div>
-                ​
-            </div>
-            ​
+        </div>
+    </div>
             <script src="https://code.jquery.com/jquery-3.4.1.js"
                 integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
             ​
