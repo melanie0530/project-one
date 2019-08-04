@@ -15,17 +15,52 @@ body {
 
 .rotate {
     position: center;
-    animation: rotation 8s infinite linear;
-  }
+    animation: rotation 30s infinite linear;
+}
 
-  @keyframes rotation {
+.object{
+    position: absolute;
+    /* left: 1000x; */
+    top: 160px;
+    /* animation:  8s infinite linear;
+    position: absolute;
+    transition: all 2s ease-in-out;
+    -webkit-transition: all 2s ease-in-out; 
+    -moz-transition: all 2s ease-in-out; 
+    -o-transition: all 2s ease-in-out;
+    transform: translate(1000px);
+    -webkit-transform: translate(400px);
+    -o-transform: translate(1000px);
+    -moz-transform: translate(1000px); */   
+    -webkit-animation: left-right 10s linear infinite; /* Chrome, Safari 5 */
+    -moz-animation: left-right 10s linear infinite; /* Firefox 5-15 */
+      -o-animation: left-right 10s linear infinite; /* Opera 12+ */
+         animation: left-right 10s linear infinite; /* Chrome, Firefox 16+, 
+                                                   IE 10+, Safari 5 */
+}
+
+@-webkit-keyframes left-right{
+    from{-webkit-transform: translate(-700px);
+        -o-transform: translate(-400px);
+        -moz-transform: translate(-400px); 
+    }
+    from{-webkit-transform: translate(-200px);
+        -o-transform: translate(-200px);
+        -moz-transform: translate(-200px); 
+    }
+
+
+}
+
+
+@keyframes rotation {
     from {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
     to {
-      transform: rotate(359deg);
+        transform: rotate(350deg);
     }
-  }
+}
 
 @-webkit-keyframes AnimationName {
     0% {
@@ -73,12 +108,34 @@ body {
     100% {
         background-position: 0% 50%
     }
-
-    
 }
 
+.button-icon-exchange {
+    content: url(/assets/image/money-exchange-icon.png);
+}
+.button-icon-weather{
+    content: url(/assets/image/weatherButtonIcon.png);
+}
 
+.buttonConvertDesign {
+    border: 2px solid rgb(42, 10, 94);
+    color: navy;
+    font-size: 20px;
+}
 
+.buttonWeather {}
+
+footer {
+    background-color: #262b4f;
+    margin: 0;
+    padding: 30px;
+    width: 100%;
+    text-align: center;
+    color: #0723f8;
+    font-size: small;
+}
+
+/* 
 .country-city {
     float: left;
     margin: 15px;
@@ -87,4 +144,4 @@ body {
 .weather-temp {
     float: right;
     margin: 25px;
-}
+} */

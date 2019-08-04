@@ -1,9 +1,7 @@
 <!doctype html>
 <html lang="en">
-​
 
-<head>
-    ​
+<head> ​
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -11,41 +9,48 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
     <link rel="stylesheet" href="assets/style.css">
     <title>Hello world Travel Site</title>
+
     <style>
         .row {
             margin: 20px;
         }
     </style>
-
 </head>
-​
 
 <body>
     ​
     <!-- Banner -->
     <div class="container">
         <div class="jumbotron" style="background-color: black">
-                <img src="assets/globe-icon.png" class="rotate" width="50%" height="50%" />
+
+            <div>
+                <img src="assets/image/globe-icon.png" class="rotate" width="200px" height="200px" />
+                <img src="assets/image/airplanes-flying.png" class="object left-right" />
+            </div>
+
             <h1 class="text-center" style="color: white">
                 <i>Hello World</i>
             </h1>
         </div>
     </div>
     ​
-    <!-- Exchange Rate -->
+    <!------------------------------------------ Exchange Rate ------------------------------------------------------>
     <div class="container">
         <div class="panel panel-default">
             <div class="panel-heading" style="background-color: black">
-                <p style="color: white">Currency change</p>
+                <p style="color: white">Currency Exchange</p>
             </div>
             ​
             <div class="row">
                 ​
-                <div class='col-sm-4'>
+                <div class='col-sm-1'>
                     <label for="inputSearch">From:</label>
+                </div>
 
+                <div class='col-sm-5'>
                     <select id="convert-from">
                         <option value="USD">USD</option>
                     </select>
@@ -60,9 +65,11 @@
 
             <div class="row">
                 ​
-                <div class='col-sm-4'>
+                <div class='col-sm-1'>
                     <label for="inputSearch">To:</label>
-                    ​
+                </div>
+
+                <div class='col-sm-5'>
                     <select id="convert-to">
                         <option value="AUD">AUD</option>
                         <option value="CAD">CAD</option>
@@ -77,103 +84,190 @@
                     <input type="number" class="form-control" id="converted-amount">
                 </div>
                 ​
-                ​
-                ​
-                <!-- Search Buttons -->
-                <div class="row">
-                    <button type="button" class="btn btn-secondary" style="background-color: #95a5a6"
-                        id="exchange-button">
-                        Search
-                    </button>
+            </div>
 
+            <!-- Search Buttons -->
+            <div class="row">
+                <!-- <div class='col-sm-6'> -->
+                <div class="btn buttonConvertDesign animated-button">
+                    <img class="button-icon-exchange"><a id="exchange-button">
+                        Convert
+                    </a>
                 </div>
             </div>
         </div>
         ​
         ​
     </div>
+
+    <!--------------------------------------- Ended Exchange Rate ------------------------------>
     ​
 
-    <!-- Weather -->
-    <div class="container" >
-        <div class="panel panel-default" >
+    <!---------------------------------------- Weather ---------------------------------------->
+    <div class="container">
+        <div class="panel panel-default">
             <div class="panel-heading" style="background-color: black">
                 <p style="color: white">Weather</p>
             </div>
 
-            <div class="country-city">
-                <div class="row">
-                    <div class='col-sm-4'>
-                        <label for="inputSearch">Country</label>
-                        <div>
-                            <select id="country">
-                                <option value="US">US</option>
-                                <option value="Australia">Australia</option>
-                                <option value="France">France</option>
-                                <option value="UK">UK</option>
+            <div class="row" style="align-content: center">
+                <!-- div for country-city -->
+                <div class="country-city col-sm-4">
 
-                            </select>
-                        </div>
-                    </div>
-                </div>
+                    <!-- div for row 1 -->
+                    <div class="row">
 
-                <div class="row">
-                    <div class='col-sm-4'>
-                        <label for="inputSearch">City</label>
-                        <div>
-                            <select id="city">
-                                <option>Chicago</option>
-                            </select>
+                        <!-- div for colum 1 -->
+                        <div class='col-sm-4'>
+                            <label for="inputSearch">Country</label>
 
-                            <button type="button" class="btn btn-secondary" style="background-color: #95a5a6"
-                                id="search-weather"> Search
-                            </button>
+                            <!-- div for option -->
+                            <div>
+                                <select id="country">
+                                    <option value="US">US</option>
+                                    <option value="Australia">Australia</option>
+                                    <option value="France">France</option>
+                                    <option value="UK">UK</option>
+
+                                </select>
+                            </div>
+                            <!-- end div for option-->
 
                         </div>
+                        <!-- end div for column 1 -->
 
                     </div>
+                    <!-- end div for row 1 -->
+
+                    <div class="row">
+                        <div class='col-sm-4'>
+                            <label for="inputSearch">City</label>
+                            <div>
+                                <select id="city">
+                                    <option>Chicago</option>
+                                    <option>Sacramento</option>
+                                    <option>Los Angeles</option>
+                                    <option>New York</option>
+                                    <option>Washington D.C</option>
+                                    <option>San Francisco</option>
+                                    <option>Seattle</option>
+                                    <option>Boston</option>
+                                    <option>Denver</option>
+                                    <option>Philadelphia</option>
+                                    <option>New Orleans</option>
+                                    <option>Nashville</option>
+                                    <option>Miami</option>
+                                    <option>Phoenix</option>
+                                    <option>Columbus</option>
+                                    <option>Indianapolis</option>
+                                    <option>Dallas</option>
+                                    <option>Bar Harbor</option>
+                                    <option>Wichita</option>
+
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-            </div>
+                <!-- end div for country-city -->
 
-            <div class="weather-temp">
-                <div class="row" id="weather">
-                    <div class='col-sm-4'>
-                        <div class="weather-container">
-                            <h2>Weather: </h2>
 
+
+                <div class="col-sm-4">
+                    <h2 id="weather-in"></h2>
+                    <div class="weather-container">
+
+                        <div class="row">
+                            <p class="weather-city"></p>
+                            <p class="weather-country"></p>
+                        </div>
+
+                        <div class="row">
+                            <img class="weather-icon">
                             <p class="weather"></p>
-
-                            <h2>Current Tempterature:</h2>
-
-                            <p class="temp"></p>
-
-                            <h2>Current Tempterature:</h2>
-
-                            <p class="minTemp"></p>
-
-                            <h2>Current Tempterature:</h2>
-
-                            <p class="maxTemp"></p>
                         </div>
-                    </div>                 ​
-                </div>
-            </div>
-        </div>
-    </div>
-            <script src="https://code.jquery.com/jquery-3.4.1.js"
-                integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-            ​
-            ​
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-                integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-                crossorigin="anonymous"></script>
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-                integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-                crossorigin="anonymous"></script>
-            ​
-            <script src="assets/app.js"></script>
+                    </div>
+                    ​
 
+                </div>
+
+
+                <div class="weather-temp col-sm-4">
+
+                    <h2 id="current-temp"></h2>
+
+                    <p class="temp"></p>
+
+                    <h2 id="min-temp"></h2>
+
+                    <p class="minTemp"></p>
+
+                    <h2 id="max-temp"></h2>
+
+                    <p class="maxTemp"></p>
+
+                </div>
+
+                <!-- <div class="row"></div>
+                <button type="button" class="buttonWeather" id="search-weather"> Check Weather
+                </button> -->
+
+                <div class="btn buttonConvertDesign animated-button">
+                        <img class="button-icon-weather"><a id="search-weather">
+                            Check Weather
+                        </a>
+                    </div>
+                </div>
+
+
+        </div>
+        <!-- end div for first row -->
+
+    </div>
+    <!-- ---------------Ended Weather----------------------- -->
+
+</div>
+
+
+    <footer>
+        Powered by <a href="https://www.amdoren.com">Amdoren</a>,
+        <a href="https://openweathermap.org">OpenWeather</a>,
+        <a href="https://fixer.io/">Fixer</a>
+        <div>Icons made by <a href="https://www.flaticon.com/authors/made-by-made" title="Made by Made">Made by Made</a>
+            from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a
+                href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC
+                3.0 BY</a></div>
+        <div>Icons made by <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a> from <a
+                href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a
+                href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC
+                3.0 BY</a></div>
+        <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a
+                href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a
+                href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC
+                3.0 BY</a></div>
+        <div>Icons made by <a href="https://www.flaticon.com/authors/monkik" title="monkik">monkik</a> from <a
+                href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a
+                href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC
+                3.0 BY</a></div>
+    </footer>
 </body>
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.js"
+integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 ​
+​
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+crossorigin="anonymous"></script>
+​
+<script src="assets/app.js"></script>
+
+
 
 </html>
