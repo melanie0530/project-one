@@ -1,3 +1,6 @@
+//------------------------------------------ Weather------------------------------------------------------>
+
+
 var countries = {
     US:[
       "Chicago","Sacramento","Los Angeles","New York","Washington D.C","San Francisco","Seattle","Boston","Denver","Philadelphia","New Orleans","Nashville","Miami","Phoenix","Columbus","Indianapolis","Dallas","Bar Harbor","Wichita"
@@ -85,12 +88,20 @@ $("#search-weather").click(function () {
 
 })
 
+//------------------------------------------ End Weather ------------------------------------------------------>
 
 
-// Exchange Currency 
+
+//------------------------------------------ Exchange Rate ------------------------------------------------------>
 
 
 var queryURL = "http://data.fixer.io/api/latest?access_key=1fa6554da687fd32934b88c7e76bbfba&symbols=EUR,AUD,CAD,PLN,MXN,USD&format=1"
+
+// $("convert-from").on("click",function(){
+//   $("value-from").empty().append("Amount to Convert: ")
+
+// })
+
 
 $("#exchange-button").on("click", function () {
 
@@ -116,9 +127,20 @@ $("#exchange-button").on("click", function () {
       // Get a reference to the result <input> element
       var convertedElement = $("#converted-amount")
 
+     $("#converted-amount").empty().append(convertedAmount.toFixed(2));
+    
+
+
+     $(".selected-country-from").empty().append("From Value ",baseCurrency);
+     $(".selected-country-to").empty().append("To Value ",exchangeCurrency);
+
+     
       // Set its value to the result of the currency exchange calculation
       convertedElement.val(convertedAmount)
 
+      // $("#design-exchange-outcome").css({
+      //   'display': block,
+      // });
       // Same as above, but one line
       //
       // $("#converted-amount").val(convertAmount)
@@ -127,6 +149,18 @@ $("#exchange-button").on("click", function () {
 });
 
 
+//------------------------------------------ End Exchange Rate------------------------------------------------------>
+
 
     
-    
+// //------------------------------------------ Time Zone------------------------------------------------------>
+// var APIKeyTime = "qDTN9tnjBWKwgAEnRuCSpvEfVB9MR8";
+// var queryURLTime = "https://www.amdoren.com/api/time.php?api_key=" + APIKeyTime +"&from=" + timeFrom + "&time=2016-12-25+21%3A30&to=" + timeTo;
+
+
+// $.ajax({
+//   url:  queryURLTime,
+//   method: "GET"
+// }).then(function (response){
+// console.log(response)
+// })

@@ -36,52 +36,67 @@
             </h1>
         </div>
     </div>
-    ​
+    
+    <!-- ​--------------------------------------------------------------------------------------->
+    <!-- ​--------------------------------------------------------------------------------------->
     <!------------------------------------------ Exchange Rate ------------------------------------------------------>
+    <!-- ​--------------------------------------------------------------------------------------->
+    <!-- ​--------------------------------------------------------------------------------------->
+
+
     <div class="container">
         <div class="panel panel-default">
             <div class="panel-heading" style="background-color: black">
                 <p style="color: white">Currency Exchange</p>
             </div>
             ​
+            <!-- ---Select Origin Currency---------->
             <div class="row">
-                ​
                 <div class='col-sm-1'>
-                    <label for="inputSearch">From:</label>
+                    <!-- promp select -->
+                    <label for="inputSearch">From:</label> 
                 </div>
-
-                <div class='col-sm-5'>
-                    <select id="convert-from">
-                        <option value="USD">USD</option>
-                    </select>
-
-                </div>
-
-                <div class='col-sm-4'>
-                    <label for="inputSearch">Value:</label>
-                    <input type="number" class="form-control" id="initial-dollar">
-                </div>
+                
+                    <!-- option of origin currency -->
+                        <div class='col-sm-5'>
+                            <select id="convert-from">
+                                <option value="USD">USD</option>
+                                <option value="AUD">AUD</option>
+                                <option value="CAD">CAD</option>
+                                <option value="MXN">MXN</option>
+                                <option value="PLN">PLN</option>                          
+                            </select>
+                        </div>
+   
+                        <div class='col-sm-4'>
+                            <!-- Prompt to provide value -->
+                            <h2 class="selected-country-from"> Amount:</h2>
+                            <!-- Enter Value -->
+                            <input type="number" class="form-control" id="initial-dollar" >
+                        </div>
             </div>
 
+            <!-- ---Select Currency to Exchange---------->
             <div class="row">
-                ​
                 <div class='col-sm-1'>
+                    <!-- prompt select -->
                     <label for="inputSearch">To:</label>
                 </div>
-
+                <!-- option of currency to exchange -->
                 <div class='col-sm-5'>
                     <select id="convert-to">
+                        <option value="USD">USD</option>
                         <option value="AUD">AUD</option>
                         <option value="CAD">CAD</option>
                         <option value="MXN">MXN</option>
                         <option value="PLN">PLN</option>
-
                     </select>
                 </div>
-                ​
-                <div class='col-sm-4'>
-                    <label for="inputSearch">Value:</label>
-                    <input type="number" class="form-control" id="converted-amount">
+                <!-- ​Show value -->
+                <div class='col-sm-4' >
+                    <h2 class="selected-country-to"></h2>
+                    <p id="converted-amount" ></p>
+
                 </div>
                 ​
             </div>
@@ -99,11 +114,17 @@
         ​
         ​
     </div>
-
+    <!-- ​--------------------------------------------------------------------------------------->
     <!--------------------------------------- Ended Exchange Rate ------------------------------>
-    ​
+    <!-- ​--------------------------------------------------------------------------------------->    <!-- ​--------------------------------------------------------------------------------------->
 
-    <!---------------------------------------- Weather ---------------------------------------->
+
+    <!-- ​--------------------------------------------------------------------------------------->
+    <!-- ​--------------------------------------------------------------------------------------->
+    <!---------------------------------------- WEATHER API ---------------------------------------->
+    <!-- ​--------------------------------------------------------------------------------------->
+    <!-- ​--------------------------------------------------------------------------------------->
+
     <div class="container">
         <div class="panel panel-default">
             <div class="panel-heading" style="background-color: black">
@@ -225,7 +246,11 @@
         <!-- end div for first row -->
 
     </div>
-    <!-- ---------------Ended Weather----------------------- -->
+
+    <!-- ​--------------------------------------------------------------------------------------->
+    <!-- ------------------------------------------------Ended Weather----------------------- -->
+    <!-- ​--------------------------------------------------------------------------------------->
+
 
 </div>
 
@@ -234,7 +259,8 @@
         Powered by <a href="https://www.amdoren.com">Amdoren</a>,
         <a href="https://openweathermap.org">OpenWeather</a>,
         <a href="https://fixer.io/">Fixer</a>
-        <div>Icons made by <a href="https://www.flaticon.com/authors/made-by-made" title="Made by Made">Made by Made</a>
+        <a href="https://www.flaticon.com">Flaticon</a>
+        <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/made-by-made" title="Made by Made">Made by Made</a>
             from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a
                 href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC
                 3.0 BY</a></div>
@@ -249,7 +275,7 @@
         <div>Icons made by <a href="https://www.flaticon.com/authors/monkik" title="monkik">monkik</a> from <a
                 href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a
                 href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC
-                3.0 BY</a></div>
+                3.0 BY</a></div> -->
     </footer>
 </body>
 

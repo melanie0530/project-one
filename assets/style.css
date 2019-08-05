@@ -2,9 +2,9 @@ body {
     font-size: 20px;
     overflow-x: hidden;
     /* For Opera */
-    -webkit-box-shadow: inset #010e11 0 0 0 5px, inset #0c363f 0 0 0 1px, inset #146577 0 0 0 10px, inset #2898b1 0 0 0 11px, inset #2aa7c4 0 0 0 16px, inset #88e2f7 0 0 0 17px, inset #c5f4ff 0 0 0 22px, inset #bfecf7 0 0 0 23px;
-    -moz-box-shadow: inset #010e11 0 0 0 5px, inset #0c363f 0 0 0 1px, inset #146577 0 0 0 10px, inset #2898b1 0 0 0 11px, inset #2aa7c4 0 0 0 16px, inset #88e2f7 0 0 0 17px, inset #c5f4ff 0 0 0 22px, inset #bfecf7 0 0 0 23px;
-    box-shadow: inset #010e11 0 0 0 5px, inset #0c363f 0 0 0 1px, inset #146577 0 0 0 10px, inset #2898b1 0 0 0 11px, inset #2aa7c4 0 0 0 16px, inset #88e2f7 0 0 0 17px, inset #c5f4ff 0 0 0 22px, inset #bfecf7 0 0 0 23px;
+    -webkit-box-shadow: inset #010e11 0 0 0 5px, inset #0c363f 0 0 0 1px, inset #146577 0 0 0 10px, inset #225b68 0 0 0 11px, inset #1e849b 0 0 0 16px, inset #88e2f7 0 0 0 17px, inset #c5f4ff 0 0 0 22px, inset #bfecf7 0 0 0 23px;
+    -moz-box-shadow: inset #010e11 0 0 0 5px, inset #0c363f 0 0 0 1px, inset #146577 0 0 0 10px, inset #225b68 0 0 0 11px, inset #1e849b 0 0 0 16px, inset #88e2f7 0 0 0 17px, inset #c5f4ff 0 0 0 22px, inset #bfecf7 0 0 0 23px;
+    box-shadow: inset #010e11 0 0 0 5px, inset #0c363f 0 0 0 1px, inset #146577 0 0 0 10px, inset #225b68 0 0 0 11px, inset #1e849b 0 0 0 16px, inset #88e2f7 0 0 0 17px, inset #c5f4ff 0 0 0 22px, inset #bfecf7 0 0 0 23px;
     background: linear-gradient(270deg, #eaf2f0, #11e3af, #11e3d8, #5c6de3, #262b4f);
     background-size: 1000% 100%;
     -webkit-animation: AnimationName 10s ease infinite;
@@ -40,18 +40,31 @@ body {
 }
 
 @-webkit-keyframes left-right{
-    from{-webkit-transform: translate(-700px);
-        -o-transform: translate(-400px);
-        -moz-transform: translate(-400px); 
-    }
     from{-webkit-transform: translate(-200px);
         -o-transform: translate(-200px);
         -moz-transform: translate(-200px); 
+    }
+    to{-webkit-transform: translate(500px);
+        -o-transform: translate(500px);
+        -moz-transform: translate(500px); 
     }
 
 
 }
 
+#initial-dollar{
+    font-size:15px;
+    border: 2px solid rgb(42, 10, 94);
+    color: navy;
+    font-size: 20px;
+}
+
+/* #design-exchange-outcome{
+    display:none;
+    border: 2px solid rgb(42, 10, 94);
+    color: navy;
+    font-size: 20px;
+} */
 
 @keyframes rotation {
     from {
@@ -117,17 +130,26 @@ body {
     content: url(/assets/image/weatherButtonIcon.png);
 }
 
+.button-icon-time{
+    content: url(/assets/image/time-passing.png);
+}
+
 .buttonConvertDesign {
     border: 2px solid rgb(42, 10, 94);
     color: navy;
     font-size: 20px;
 }
 
-.buttonWeather {}
+select{
+    border: 2px solid rgb(42, 10, 94);
+    color: navy;
+    font-size: 20px;
+}
 
 footer {
     background-color: #262b4f;
     margin: 0;
+    margin-bottom: 0;
     padding: 30px;
     width: 100%;
     text-align: center;
