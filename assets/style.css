@@ -124,14 +124,14 @@ body {
 }
 
 .button-icon-exchange {
-    content: url(/assets/image/money-exchange-icon.png);
+    content: url(assets/image/money-exchange-icon.png);
 }
 .button-icon-weather{
-    content: url(/assets/image/weatherButtonIcon.png);
+    content: url(assets/image/weatherButtonIcon.png);
 }
 
 .button-icon-time{
-    content: url(/assets/image/time-passing.png);
+    content: url(assets/image/time-passing.png);
 }
 
 .buttonConvertDesign {
